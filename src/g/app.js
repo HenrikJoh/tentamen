@@ -1,6 +1,6 @@
 // JavaScript för att implementera kraven A-E.
 const productList = $('#product-list');
-const cartItem = $('#varukorg');
+const cartItem = $('#items');
 let order = [];
 
 
@@ -59,6 +59,12 @@ function createProduct(product) {
     });
 }
 getProducts();
+
+ $("#sendBtn").click(function () {
+     alert("Order sent");
+     cartItem.empty();
+ })
+
 
 /* button.click(function(product) {
         
